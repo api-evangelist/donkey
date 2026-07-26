@@ -1,7 +1,26 @@
 aid: donkey
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/donkey.png
 name: Donkey
-description: Donkey is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Donkey is an AI-native trading company (Y Combinator, Summer 2026) that
+  buys directly from Chinese factories and sells delivered duty-paid to US importers.
+  Donkey mines public US customs records to identify the factory that actually makes
+  a product, returns a landed DDP quote within 72 hours, runs its own on-the-floor
+  quality inspections before the factory is paid, clears customs, moves the money,
+  and offers credit-insured net-45 terms to qualified buyers. Founded by Benjamin
+  Martindale (CEO) and Minghao Tan (CTO), the company runs small teams in San Francisco
+  and China. Donkey publishes no public API, SDK, or developer platform today; this
+  profile tracks its company identity in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/donkey/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,39 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website: https://donkey.trade
+x-yc-batch: Summer 2026
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Trading
+- Logistics
+- Supply Chain
+- Manufacturing
+- Import
+- Customs
+- Cross-Border
+- Y Combinator
+- AI
 apis: []
+common:
+- type: DomainSecurity
+  url: security/donkey-domain-security.yml
+- type: Website
+  url: https://donkey.trade
+- type: TermsOfService
+  url: https://donkey.trade/terms
+- type: PrivacyPolicy
+  url: https://donkey.trade/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
